@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import {
     HashRouter as Router,
     Route
-} from 'react-router-dom';
+} from "react-router-dom";
 
 function Root(){
     return <h1>Root</h1>
@@ -21,10 +21,10 @@ function Profile(){
 ReactDOM.render((
     <Router>
         <div>
-            <Route path="/" component="Root"></Route>
-            <Route path="/home" component="Home"></Route>
-            <Route path="/user" component="User"></Route>
-            <Route path="/profile" component="Profile"></Route>
+            <Route path="/" component={Root}></Route>
+            <Route path="/home" component={Home}></Route>
+            <Route path="/user" component={User}></Route>
+            <Route path="/profile" component={Profile}></Route>
         
         </div>
     </Router>
